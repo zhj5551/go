@@ -1,4 +1,5 @@
 # top-most EditorConfig file
+# github.com默认tab是8个空格，在每个Repository的根目录下添加此文件，可以修改tab为4个空格
 root = true
  
 # all files
