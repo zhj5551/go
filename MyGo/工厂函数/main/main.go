@@ -1,8 +1,8 @@
 package main
 
 import (
-	"MyGo/工厂函数/model"
 	"fmt"
+	"go/MyGo/工厂函数/model"
 )
 
 func main() {
