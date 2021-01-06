@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"go/尚硅谷/chapter03/demo04/model"
 )
 
 //变量使用的注意事项
@@ -12,12 +13,12 @@ func main() {
 	i = 30
 	i = 50
 	fmt.Println("i=", i)
-	//i = 1.2 //int ,原因是不能改变数据类型
+	// i = 1.2 //int ,原因是不能改变数据类型
 
 	//变量在同一个作用域(在一个函数或者在代码块)内不能重名
-	//var i int = 59
-	//i := 99
+	// var i int = 59
+	// i := 99
 	//我们使用utils.go 的heroName 包名.标志符
-	// fmt.Println(model.HeroName)
+	fmt.Println(model.HeroName)
 
 }
