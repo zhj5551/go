@@ -48,7 +48,18 @@ func main() {
 		"3178945074@qq.com",
 	}
 	subject := "Hello,Go Mail"
-	body := "<h1>Hello From Go Mail hhhhhzhangjia</h1>"
+	body := `<html>
+	<body>
+		<h1 id="title">春晓</h1>
+		<p class="content1">
+		春眠不觉晓，
+		处处闻啼鸟。
+		夜来风雨声，
+		花落知多少。
+		</p>
+	</body>
+</html>`
+
 	for _, mail := range mailTo {
 		wg.Add(1)
 		go sendMail(mail, subject, body, &wg)
