@@ -1,7 +1,8 @@
 package main
+
 import (
 	"fmt"
-	"go_code/chapter11/encapsulate/model"
+	"go/尚硅谷/chapter11/encapsulate/model"
 )
 
 func main() {
@@ -11,5 +12,5 @@ func main() {
 	p.SetSal(5000)
 	fmt.Println(p)
 	fmt.Println(p.Name, " age =", p.GetAge(), " sal = ", p.GetSal())
-	
+
 }
