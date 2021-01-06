@@ -21,8 +21,7 @@ func sendMail(mailTo string, subject, body string, wg *sync.WaitGroup) error {
 		"username": "3178945074@qq.com",
 		"authCode": "ieckpqajrwlgdghf", // 授权密码，而不是登陆密码
 		"host":     "smtp.qq.com",
-		"port":     "465",
-		// "port":     "25",  // QQ邮箱可以使用464或25端口
+		"port":     "465", // QQ邮箱可以使用464或25端口
 	}
 
 	port, _ := strconv.Atoi(mailConnQQ["port"])
