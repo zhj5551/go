@@ -16,8 +16,12 @@ func main() {
         "ddddd",
         "eee",
         "ff",
+		"hh",
     }
-    str := slice[rand.Intn(len(slice))]
-    fmt.Println(str)
+	for {
+    	str := slice[rand.Intn(len(slice))]
+    	fmt.Println(str)
+		time.Sleep(time.Second / 2)
+	}
 }
 
