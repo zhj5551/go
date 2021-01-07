@@ -1,4 +1,5 @@
 package main
+
 import (
 	"fmt"
 )
@@ -10,11 +11,12 @@ func test(n int) {
 	} else {
 		fmt.Println("n=", n)
 	}
-	
+
 }
 
 func main() {
 
 	n := 4
 	test(n)
+	fmt.Println(n)
 }
