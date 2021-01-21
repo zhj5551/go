@@ -24,9 +24,6 @@ func main() {
 
 func fun() {
 	defer fmt.Println("defer。。。")
-
-	//return           //终止此函数
-	runtime.Goexit() //终止所在的协程
-
+	runtime.Goexit() //退出当前 goroutine(但是defer语句会照常执行)
 	fmt.Println("fun函数。。。")
 }
