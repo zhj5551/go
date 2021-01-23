@@ -5,6 +5,7 @@ import (
 	"time"
 )
 
+// 判断某个数是不是素数
 func suShu(num1 int) {
 
 	flag := true
@@ -15,7 +16,7 @@ func suShu(num1 int) {
 		}
 	}
 	if flag {
-		fmt.Print(num1, " ")
+		// fmt.Print(num1, " ")
 	}
 	flag = true
 }
@@ -24,6 +25,7 @@ func main() {
 	// suShu(10000000)
 	// fmt.Print("2 ")
 	startTime := time.Now()
+	// 循环2-20000，分别判断每个数是不是素数
 	for num := 2; num < 20000; num++ {
 		suShu(num)
 		time.Sleep(100)
