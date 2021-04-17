@@ -1,0 +1,23 @@
+#把新分区挂载到已经存在的目录
+fdisk /dev/vdb
+   （新建分区vdb1）
+partprobe /dev/vdb
+#   （内核重新识别）
+fdisk -l
+  
+pvcreate /dev/vdb1
+# （新建PV） 
+pvdisplay
+   
+vgextend rootvg /dev/vdb1
+#   (扩展VG)
+pvdisplay
+   
+vgs
+#   （查看free可用空间）
+#lvextend -L +200G /dev/rootvg/rootlv 
+lvextend -l +100%FREE /dev/rootvg/rootlv 
+# （根据需求扩容rootlv） 
+df -h
+xfs_growfs /dev/mapper/rootvg-rootlv （刷新LV配置）
+df -h
