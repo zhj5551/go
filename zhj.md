@@ -1,13 +1,10 @@
 # 第一章
 ## 第二章
 
-<details>
-<summary>一、Mysql数据库基础</summary>
-	[mysql查询](https://blog.51cto.com/u_12723336/2652014)
-	[mysql框架图](https://blog.51cto.com/u_12723336/2653779)
-	[mysql课堂题目](https://gitee.com/zhj5551/go/blob/master/aa.md)
-	[mysql查询汇总](https://blog.51cto.com/u_12723336/2735990)
-</details>
+[mysql查询](https://blog.51cto.com/u_12723336/2652014)
+[mysql框架图](https://blog.51cto.com/u_12723336/2653779)
+[mysql课堂题目](https://gitee.com/zhj5551/go/blob/master/aa.md)
+[mysql查询汇总](https://blog.51cto.com/u_12723336/2735990)
 
 
 <details>
