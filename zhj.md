@@ -15,7 +15,7 @@
 [http://192.168.245.189/linux/](http://192.168.245.189/linux/)
 
 <details>
-<summary>[http://192.168.245.189/linux/](http://192.168.245.189/linux/)</summary>
+<summary>折叠</summary>
     import(估计)
 # 第一章
     内容
