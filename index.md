@@ -2,12 +2,8 @@
 ## 第二章
 
 <details>
-<summary>go语言</summary>
-  
-
-
-
-
+<summary>go语言</summary>   
+	
 ###### [mysql查询](https://blog.51cto.com/u_12723336/2652014)  
 ###### [mysql框架图](https://blog.51cto.com/u_12723336/2653779)  
 ###### [mysql课堂题目](https://gitee.com/zhj5551/go/blob/master/aa.md)  
@@ -19,6 +15,7 @@
 ###### [go标准包](https://studygolang.com/pkgdoc)
 ###### [朝代顺序表](http://114.xixik.com/chinese-dynasties/)  
 ###### [高考满分作文](http://www.zxxk.com/gaokao/mfzw/)  
+
 </details>
 
 
