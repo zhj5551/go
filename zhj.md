@@ -12,13 +12,22 @@
 
 
 
-<details>
-<summary>golang语言</summary>
-     [【Go语言入门教程，Golang入门教程（非常详细）】](http://m.biancheng.net/golang/)  
-	 [golang菜鸟教程](https://m.runoob.com/go/)  
-	 [bee工具的使用](https://beego.me/docs/install/bee.md)  
-</details>
+
+ [ggg](http://m.biancheng.net/golang/)   
+
+
+ [golang菜鸟教程](https://m.runoob.com/go/)    
+
+
+ [bee工具的使用](https://beego.me/docs/install/bee.md)      
+	 
+	 
+
+
+
 [朝代顺序表](http://114.xixik.com/chinese-dynasties/)  
+
+
 [高考满分作文](http://www.zxxk.com/gaokao/mfzw/)  
 
 
