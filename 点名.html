@@ -1,18 +1,100 @@
+
 <!DOCTYPE html>
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>点击按钮随机点名-样式布局参考</title>
+  <title>点击按钮随机点名</title>
+  <style type="text/css">  
+   #box {
+    margin: auto;
+    width: 1000px;
+    font-size: 166px;
+	height: 235px;
+    color: #ed1941;
+    text-align: center;
+    margin-top: 200px;
+   }   
+   #bt {
+    margin: auto;
+    width: 120px;
+	height: 90px;
+    text-align: center;
+
+    margin-top: 75px;
+    color: #fff;
+    font-size: 30px;   // 设置字体大小
+    cursor: pointer;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+   }
+  </style>
+   <script type="text/javascript">
+   var namelist=[
+		"陶喆",
+		"何东俊",
+		"冯少宇",
+		"陈家乐",
+		"罗洋洋",
+		"闫雨乐",
+		"杨永生",
+		"冷申奥",
+		"张振玉",
+		"王锦亮",
+		"吴希乐",
+		"岳洪光",
+		"穆奎成",
+		"李浩",
+		"胡超凡",
+		"张浩",
+		"王明俊",
+		"陈翰卿",
+		"陈志程",
+		"刘玉华",
+		"王亚军",
+		"韩琦",
+		"赵博林",
+		"常苏迪",
+		"杨燚佳",
+		"孙硕晗",
+		"刘文俊",
+		"王国伟",
+		"张天雨",
+		"牛成功",
+		"章智全",
+		"焦恩亮",
+		"王昕怡",
+		"鲍婷",
+		"张美慧",
+		"韩梦雪"
+	];
+	 var mytime=null;
+	 
+	 function doit(){
+		 var bt=window.document.getElementById("bt");
+		 if(mytime==null){
+			  bt.innerHTML="停止";
+			  show();
+	 }
+	 else{
+		  bt.innerHTML="开始";
+		  clearTimeout(mytime);
+		  mytime=null;
+	 }
+	}
  
+	 function show(){
+	 var box=window.document.getElementById("box");
+	 var num=Math.floor((Math.random()*100000))%namelist.length;
+	 box.innerHTML=namelist[num];
+	 mytime=setTimeout("show()",1);
+	 }
+   </script>
  </head>
- <body id="bodybj" style="background-color: black;">
-<details>
-  <summary><mark><font color=darkred>点击查看详细内容</font></mark></summary>
-  <p> - 测试 测试测试</p>
-  <pre><code>  
-	for i in a:
-    print(i)
-  </code></pre>
-</details>
+ <!-- <body id="bodybj" style="background-color: green;"> -->
+ <body id="bodybj" >
+  <div id="box">幸运666</div>
+  <div id="bt" onclick="doit()" style="background-color: green;" >点名</div>
  </body>
 </html>
