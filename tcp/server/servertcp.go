@@ -28,6 +28,7 @@ func process(conn net.Conn) {
 }
 
 func main() {
+	// 1.创建监听
 	listen, err := net.Listen("tcp", "127.0.0.1:20000")
 	if err != nil {
 		fmt.Println("listen failed, err:", err)
@@ -35,6 +36,7 @@ func main() {
 	}
 
 	for {
+		// 创建接受客户端的请求，返回conn
 		conn, err := listen.Accept() // 建立连接
 		if err != nil {
 			fmt.Println("accept failed, err:", err)
