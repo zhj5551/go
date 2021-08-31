@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>点击按钮随机点名</title>
+  <style type="text/css">  
+   #box {
+    margin: auto;
+    width: 1000px;
+    font-size: 166px;
+	height: 235px;
+    color: #ed1941;
+    text-align: center;
+    margin-top: 200px;
+   }   
+   #bt {
+    margin: auto;
+    width: 120px;
+	height: 90px;
+    text-align: center;
+
+    margin-top: 75px;
+    color: #fff;
+    font-size: 30px;   // 设置字体大小
+    cursor: pointer;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+   }
+  </style>
+   <script type="text/javascript">
+   var namelist=[
+		"《小学教师专业标准（试行）中“专业知识”维度包括哪些领域？》",
+		"简述影响学生有意注意的因素？",
+		"简述家校合作的途径？"
+	];
+	 var mytime=null;
+	 
+	 function doit(){
+		 var bt=window.document.getElementById("bt");
+		 if(mytime==null){
+			  bt.innerHTML="停止";
+			  show();
+	 }
+	 else{
+		  bt.innerHTML="开始";
+		  clearTimeout(mytime);
+		  mytime=null;
+	 }
+	}
+ 
+	 function show(){
+	 var box=window.document.getElementById("box");
+	 var num=Math.floor((Math.random()*100000))%namelist.length;
+	 box.innerHTML=namelist[num];
+	 mytime=setTimeout("show()",1);
+	 }
+   </script>
+ </head>
+ <!-- <body id="bodybj" style="background-color: green;"> -->
+ <body id="bodybj" >
+  <div id="box">幸运666</div>
+  <div id="bt" onclick="doit()" style="background-color: green;" >点名</div>
+ </body>
+</html>
