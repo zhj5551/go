@@ -11,7 +11,7 @@
     height: 235px;
     color: #ed1941;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 20px;
    }   
   #da {
     margin: auto;
@@ -19,7 +19,7 @@
 	height: 90px;
     text-align: center;
 
-    margin-top: 75px;
+    margin-top: 20px;
     color: rgb(0,0,0);
     font-size: 30px;   // 设置字体大小
     cursor: pointer;
@@ -28,18 +28,18 @@
     justify-content: space-around;
     flex-direction: column;
    }
-	#da1 {
+	#xianshi {
     margin: auto;
-    width: 1120px;
-	height: 190px;
-    text-align: center;
+    width: 820px;
+	height: 100px;
+    text-align: left;
 
-    margin-top: 75px;
+    margin-top: 20px;
     color: rgb(0,0,0);
     font-size: 30px;   // 设置字体大小
     cursor: pointer;
 	display: flex;
-    align-items: center;
+    align-items: left;
     justify-content: space-around;
     flex-direction: column;
    }
@@ -49,7 +49,7 @@
 	height: 90px;
     text-align: center;
 
-    margin-top: 75px;
+    margin-top: 20px;
     color: #fff;
     font-size: 30px;   // 设置字体大小
     cursor: pointer;
@@ -67,11 +67,11 @@
 	 var mytime=null;
 
 	   function daan(){
-		   window.document.getElementById("da1").innerHTML=document.getElementById(namelist[num]).innerHTML;
+		   window.document.getElementById("xianshi").innerHTML=document.getElementById(namelist[num]).innerHTML;
 	   }
 	   
 	 function doit(){
-		window.document.getElementById("da1").innerHTML=""
+		window.document.getElementById("xianshi").innerHTML=""
 		 
 		 var bt=window.document.getElementById("bt");
 		 if(mytime==null){
@@ -98,7 +98,7 @@
 	 <div id="box">幸运666</div>
 	 <div id="bt" onclick="doit()" style="background-color: green; " >点名</div>
 	 <div id="da" onclick="daan()" style="background-color: red; "  >答案</div>
-	 <div id="da1" onclick="daan()" style="background-color: rgb(255,255,255);" ></div>
+	 <div id="xianshi" onclick="daan()" style="background-color: rgb(255,255,255);" ></div>
 	 
 	
 	 
@@ -115,8 +115,8 @@
 		 发阿发<br>
 	 </div>
 	 	 <div id="李泽豪" style="display:none;">
-		 职业素质 <br>
-		 发阿发<br>
+		 1、职fasfasf业afadfafafa素dafdf质 <br>
+		 2、发阿发<br>
 	 </div>
 	 	 <div id="职业素质aa" style="display:none;">
 		 职业素质 <br>
