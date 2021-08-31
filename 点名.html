@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
  <head>
@@ -9,7 +8,7 @@
     margin: auto;
     width: 1000px;
     font-size: 166px;
-	height: 235px;
+    height: 235px;
     color: #ed1941;
     text-align: center;
     margin-top: 200px;
@@ -32,42 +31,9 @@
   </style>
    <script type="text/javascript">
    var namelist=[
-		"陶喆",
-		"何东俊",
-		"冯少宇",
-		"陈家乐",
-		"罗洋洋",
-		"闫雨乐",
-		"杨永生",
-		"冷申奥",
-		"张振玉",
-		"王锦亮",
-		"吴希乐",
-		"岳洪光",
-		"穆奎成",
-		"李浩",
-		"胡超凡",
-		"张浩",
-		"王明俊",
-		"陈翰卿",
-		"陈志程",
-		"刘玉华",
-		"王亚军",
-		"韩琦",
-		"赵博林",
-		"常苏迪",
-		"杨燚佳",
-		"孙硕晗",
-		"刘文俊",
-		"王国伟",
-		"张天雨",
-		"牛成功",
-		"章智全",
-		"焦恩亮",
-		"王昕怡",
-		"鲍婷",
-		"张美慧",
-		"韩梦雪"
+		
+		'<a href="#aaa" target="_blank" style="text-decoration:none">李泽豪</a>',
+	    '<a href="#aaa" target="_blank" style="text-decoration:none">宋世宇</a>'
 	];
 	 var mytime=null;
 	 
@@ -94,7 +60,17 @@
  </head>
  <!-- <body id="bodybj" style="background-color: green;"> -->
  <body id="bodybj" >
-  <div id="box">幸运666</div>
-  <div id="bt" onclick="doit()" style="background-color: green;" >点名</div>
+	  <div id="box">幸运666</div>
+	  <div id="bt" onclick="doit()" style="background-color: green;" >点名</div>
+
+
+	 <button id="btn" type="button" onclick="aa()" >按钮</button>
+	 <script type="text/javascript">
+		 var btn = document.getElementById('btn') 
+	   function aa() {
+			 window.open('http://www.baidu.com')  //新窗口打开
+		 }
+	  </script>
+	 <div id="aaa">ddddd</div>
  </body>
 </html>
