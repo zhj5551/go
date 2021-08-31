@@ -13,6 +13,36 @@
     text-align: center;
     margin-top: 200px;
    }   
+  #da {
+    margin: auto;
+    width: 120px;
+	height: 90px;
+    text-align: center;
+
+    margin-top: 75px;
+    color: rgb(0,0,0);
+    font-size: 30px;   // 设置字体大小
+    cursor: pointer;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+   }
+	#da1 {
+    margin: auto;
+    width: 1120px;
+	height: 190px;
+    text-align: center;
+
+    margin-top: 75px;
+    color: rgb(0,0,0);
+    font-size: 30px;   // 设置字体大小
+    cursor: pointer;
+	display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+   }
    #bt {
     margin: auto;
     width: 120px;
@@ -31,13 +61,18 @@
   </style>
    <script type="text/javascript">
    var namelist=[
-		
-	'<a href="https://gitee.com/zhj5551/html/blob/master/aa.md#bb" style="text-decoration:none">李泽豪</a>',
-	'<a href="https://gitee.com/zhj5551/html/blob/master/aa.md#cc" style="text-decoration:none">宋世宇</a>'
+		'李泽豪',
+	    '宋世宇'
 	];
 	 var mytime=null;
-	 
+
+	   function daan(){
+		   window.document.getElementById("da1").innerHTML=document.getElementById(namelist[num]).innerHTML;
+	   }
+	   
 	 function doit(){
+		window.document.getElementById("da1").innerHTML=""
+		 
 		 var bt=window.document.getElementById("bt");
 		 if(mytime==null){
 			  bt.innerHTML="停止";
@@ -52,7 +87,7 @@
  
 	 function show(){
 	 var box=window.document.getElementById("box");
-	 var num=Math.floor((Math.random()*100000))%namelist.length;
+	 num=Math.floor((Math.random()*100000))%namelist.length;
 	 box.innerHTML=namelist[num];
 	 mytime=setTimeout("show()",1);
 	 }
@@ -60,7 +95,46 @@
  </head>
  <!-- <body id="bodybj" style="background-color: green;"> -->
  <body id="bodybj" >
-	  <div id="box">幸运666</div>
-	  <div id="bt" onclick="doit()" style="background-color: green;" >点名</div>
+	 <div id="box">幸运666</div>
+	 <div id="bt" onclick="doit()" style="background-color: green; float:left;margin-left:7cm;" >点名</div>
+	 <div id="da" onclick="daan()" style="background-color: red; float:right;margin-left:7cm;"  >答案</div>
+	 <div id="da1" onclick="daan()" style="background-color: rgb(255,255,255);" ></div>
+	 
+	
+	 
+	 <div id="职业素质aa" style="display:none;">
+		 职业素质 <br>
+		 发阿发<br>
+	 </div>
+	 	 <div id="职业素质aa" style="display:none;">
+		 职业素质 <br>
+		 发阿发<br>
+	 </div>
+	 	 <div id="宋世宇" style="display:none;">
+		 职业素质 <br>
+		 发阿发<br>
+	 </div>
+	 	 <div id="李泽豪" style="display:none;">
+		 职业素质 <br>
+		 发阿发<br>
+	 </div>
+	 	 <div id="职业素质aa" style="display:none;">
+		 职业素质 <br>
+		 发阿发<br>
+	 </div>
+	 	 <div id="职业素质aa" style="display:none;">
+		 职业素质 <br>
+		 发阿发<br>
+	 </div>
+	 	 <div id="职业素质aa" style="display:none;">
+		 职业素质 <br>
+		 发阿发<br>
+	 </div>
+	 	 <div id="职业素质aa" style="display:none;">
+		 职业素质 <br>
+		 发阿发<br>
+	 </div>
+
+	 
  </body>
 </html>
