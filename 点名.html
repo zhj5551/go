@@ -14,7 +14,7 @@
     text-align: center;
     margin-top: 20px;
    }   
-  #danming {
+  #dianming {
     margin: auto;
     width: 150px;
 	height: 100px;
@@ -59,7 +59,7 @@
 	 function doit(){
 		window.document.getElementById("xianshi").innerHTML=""
 		 
-		 var bt=window.document.getElementById("bt");
+		 var bt=window.document.getElementById("dianming");
 		 if(mytime==null){
 			  bt.innerHTML="停止";
 			  show();
@@ -72,7 +72,7 @@
 	}
  
 	 function show(){
-	 var box=window.document.getElementById("box");
+	 var box=window.document.getElementById("timu");
 	 num=Math.floor((Math.random()*100000))%namelist.length;
 	 box.innerHTML=namelist[num];
 	 mytime=setTimeout("show()",1);
@@ -82,8 +82,8 @@
  <!-- <body id="bodybj" style="background-color: green;"> -->
  <body id="bodybj" >
 	 <div id="timu">幸运666</div>
-	 <div id="danming" onclick="doit()" style="background-color: green; " >点名</div>
-	 <div id="danming" onclick="daan()" style="background-color: red; "  >答案</div>
+	 <div id="dianming" onclick="doit()" style="background-color: green; " >点名</div>
+	 <div id="dianming" onclick="daan()" style="background-color: red; "  >答案</div>
 	 <div id="xianshi" onclick="daan()" style="background-color: rgb(255,255,255);" ></div>
 	 
 	
