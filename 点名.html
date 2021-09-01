@@ -29,6 +29,9 @@
     justify-content: space-around;
     flex-direction: column;
    }
+   body {
+	  text-align:center;
+   }
   #xianshi {
     margin: auto;
     width: 900px;
@@ -42,6 +45,7 @@
     align-items: left;
     justify-content: space-around;
     flex-direction: column;
+	display: inline-block;
    }
   </style>
   
@@ -52,10 +56,11 @@
 	 <div id="timu">幸运666</div>
 	 <div id="dianming" onclick="doit()" style="background-color: green; " >点名</div>
 	 <div id="dianming" onclick="daan()" style="background-color: red; "  >答案</div><br>
-	 <div id="xianshi" onclick="daan()" style="background-color: rgb(255,255,255);" ></div>
+	 <div id="xianshi" onclick="daan()" style="background-color: green;" ></div>
 
 	
 	 <div id="main">
+	 <!-- 正文开始 -->
 	 <div id="《小学教师专业标准（试行）》中“专业知识”维度包括哪些领域？" style="display:none;">
 	   《小学教师专业标准（试行）》中“专业知识”维度注意包括以下领域 <br>
 		1、小学生发展知识。<br>
@@ -124,7 +129,7 @@
 		（8）要妥善处理与社会规范一致或冲突的问题，避免填答者出现社会认可效应。<br>
 	 </div>
 
-	 
+	 <!-- 正文结束 -->
 	</div>
 	 <script type="text/javascript">
 	 	var parentDiv=document.getElementById("main");
