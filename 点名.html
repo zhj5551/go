@@ -32,7 +32,7 @@
   #xianshi {
     margin: auto;
     width: 900px;
-	height: 560px;
+	height: 960px;
     text-align: left;
     margin-top: 20px;
     color: rgb(0,0,0);
@@ -44,58 +44,18 @@
     flex-direction: column;
    }
   </style>
-   <script type="text/javascript">
-   var namelist=[
-		'简述影响学生有意注意的因素？',
-		
-		
-		'简述思维过程中问题解决的影响因素？',
-		'教师建立良好师生关系的基本要求有哪些？',
-		'简述学习迁移的影响因素？',
-		'调查问卷的问题设计有哪些基本要求？',
-		
-		
-		'《小学教师专业标准（试行）》中“专业知识”维度包括哪些领域？',
-	    '简述家校合作的途径？'
-	];
-	 var mytime=null;
-
-	   function daan(){
-		   window.document.getElementById("xianshi").innerHTML=document.getElementById(namelist[num]).innerHTML;
-	   }
-	   
-	 function doit(){
-		window.document.getElementById("xianshi").innerHTML=""
-		 
-		 var bt=window.document.getElementById("dianming");
-		 if(mytime==null){
-			  bt.innerHTML="停止";
-			  show();
-	 }
-	 else{
-		  bt.innerHTML="开始";
-		  clearTimeout(mytime);
-		  mytime=null;
-	 }
-	}
- 
-	 function show(){
-	 var box=window.document.getElementById("timu");
-	 num=Math.floor((Math.random()*100000))%namelist.length;
-	 box.innerHTML=namelist[num];
-	 mytime=setTimeout("show()",1);
-	 }
-   </script>
+  
  </head>
  <!-- <body id="bodybj" style="background-color: green;"> -->
  <body id="bodybj" >
+	
 	 <div id="timu">幸运666</div>
 	 <div id="dianming" onclick="doit()" style="background-color: green; " >点名</div>
 	 <div id="dianming" onclick="daan()" style="background-color: red; "  >答案</div><br>
 	 <div id="xianshi" onclick="daan()" style="background-color: rgb(255,255,255);" ></div>
-	 
+
 	
-	 
+	 <div id="main">
 	 <div id="《小学教师专业标准（试行）》中“专业知识”维度包括哪些领域？" style="display:none;">
 	   《小学教师专业标准（试行）》中“专业知识”维度注意包括以下领域 <br>
 		1、小学生发展知识。<br>
@@ -164,6 +124,40 @@
 		（8）要妥善处理与社会规范一致或冲突的问题，避免填答者出现社会认可效应。<br>
 	 </div>
 
-
+	 
+	</div>
+	 <script type="text/javascript">
+	 	var parentDiv=document.getElementById("main");
+		var childs=parentDiv.getElementsByTagName('div');
+		var arr=[];
+		for(var i=0; i<childs.length; i++){
+			arr.push(childs[i].id)
+		}
+		console.log(arr)
+		var mytime=null;
+	    function daan(){
+		    window.document.getElementById("xianshi").innerHTML=document.getElementById(namelist[num]).innerHTML;
+	    }
+		function doit(){
+			window.document.getElementById("xianshi").innerHTML=""
+			var bt=window.document.getElementById("dianming");
+			if(mytime==null){
+				  bt.innerHTML="停止";
+				  show();
+			}
+			else{
+				bt.innerHTML="开始";
+				clearTimeout(mytime);
+				mytime=null;
+			}
+		}
+ 
+		function show(){
+			var box=window.document.getElementById("timu");
+			num=Math.floor((Math.random()*100000))%arr.length;
+			box.innerHTML=arr[num];
+			mytime=setTimeout("show()",1);
+		}
+   </script>
  </body>
 </html>
